@@ -1,0 +1,66 @@
+version: "3.1"
+
+intents:
+  - xinchao
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_gemini
+  - nlu_fallback
+  - ask_school_info
+  - ask_major
+  - ask_tuition
+  - ask_admission
+  - ask_scholarship
+  - ask_dormitory
+  - ask_contact
+entities:
+  - major
+responses:
+  utter_greet:
+    - text: "Xin chào! Tôi là chatbot hỗ trợ tuyển sinh Trường Đại học Bạc Liêu. Bạn muốn tìm hiểu thông tin gì ạ?"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Tạm biệt bạn, chúc bạn một ngày tốt lành! "
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_school_info:
+    - text: "Trường Đại học Bạc Liêu tọa lạc tại số 178 Võ Thị Sáu, phường 8, TP. Bạc Liêu. Trường có nhiều khoa, viện đào tạo đa ngành."
+
+  utter_major:
+    - text: "Các ngành đào tạo chính gồm: Công nghệ thông tin, Sư phạm, Kinh tế, Ngôn ngữ Anh, Nông nghiệp, Thủy sản, và nhiều ngành khác."
+
+  utter_tuition:
+    - text: "Học phí dao động từ 8 đến 12 triệu đồng/năm tùy ngành. Ngành Sư phạm được miễn học phí theo quy định."
+
+  utter_admission:
+    - text: "Trường tuyển sinh bằng nhiều phương thức: xét tuyển học bạ, điểm thi tốt nghiệp THPT, và các phương thức khác theo quy định của Bộ GD&ĐT."
+
+  utter_scholarship:
+    - text: "Trường có nhiều chính sách học bổng: học bổng khuyến khích học tập, học bổng cho sinh viên nghèo vượt khó, và học bổng toàn phần cho sinh viên xuất sắc."
+
+  utter_dormitory:
+    - text: "Trường có ký túc xá gần khuôn viên, chi phí hợp lý, đầy đủ tiện nghi cho sinh viên."
+
+  utter_contact:
+    - text: "Bạn có thể liên hệ Phòng Đào tạo qua số điện thoại: (0291) 382 5137 hoặc truy cập website: http://blu.edu.vn"
+actions:
+  - action_chat_gemini
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

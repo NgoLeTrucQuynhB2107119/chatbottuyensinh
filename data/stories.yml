@@ -1,0 +1,70 @@
+version: "3.1"
+
+stories:
+  - story: happy path
+    steps:
+      - intent: xinchao
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+
+  - story: sad path 1
+    steps:
+      - intent: xinchao
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: sad path 2
+    steps:
+      - intent: xinchao
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
+  - story: greet and ask
+    steps:
+      - intent: xinchao
+      - action: utter_greet
+      - intent: ask_gemini
+      - action: action_chat_gemini
+      - action: action_listen
+  - story: hỏi thông tin trường
+    steps:
+      - intent: ask_school_info
+      - action: utter_school_info
+
+  - story: hỏi ngành đào tạo
+    steps:
+      - intent: ask_major
+      - action: utter_major
+
+  - story: hỏi học phí
+    steps:
+      - intent: ask_tuition
+      - action: utter_tuition
+
+  - story: hỏi tuyển sinh
+    steps:
+      - intent: ask_admission
+      - action: utter_admission
+
+  - story: hỏi học bổng
+    steps:
+      - intent: ask_scholarship
+      - action: utter_scholarship
+
+  - story: hỏi ký túc xá
+    steps:
+      - intent: ask_dormitor
+      - action: utter_dormitory
+
+  - story: hỏi liên hệ
+    steps:
+      - intent: ask_contact
+      - action: utter_contact

@@ -1,0 +1,167 @@
+version: "3.1"
+
+nlu:
+  - intent: xinchao
+    examples: |
+      - Xin chào
+      - Chào bạn
+      - Hello
+      - Có ai ở đó không?
+      - Chào trường Đại học Bạc Liêu
+      - Bot ơi
+      - Cho tôi hỏi
+      - chào bạn
+      - chào
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - bai
+      - bái bai
+      - tạm biệt bạn
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+  - intent: ask_school_info
+    examples: |
+      - Trường Đại học Bạc Liêu nằm ở đâu
+      - Địa chỉ trường Đại học Bạc Liêu
+      - Trường ĐHBL ở vị trí nào
+      - ĐH Bạc Liêu ở chỗ nào
+      - Trường này tọa lạc ở đâu
+      - Trường đặt tại tỉnh nào
+      - ĐHBL có cơ sở chính ở đâu
+      - trường đh bạc liêu ở đâu
+      - Trường thành lập năm nào?
+      - Trường có bao nhiêu khoa?
+      - Sứ mệnh, tầm nhìn của trường là gì?
+      - Trường có ký túc xá cho sinh viên không?
+      - Cơ sở vật chất của trường thế nào?
+
+  - intent: ask_major
+    examples: |
+      - Trường có những ngành nào?
+      - Các ngành đào tạo bậc Đại học gồm gì?
+      - Ngành [Công nghệ thông tin](major) có đào tạo không?
+      - Trường có ngành Ngôn ngữ Anh không?
+      - Ngành [Sư phạm](major) có không?
+      - Ngành [Kinh tế](major) học mấy năm?
+
+  - intent: ask_tuition
+    examples: |
+      - Học phí ngành [Công nghệ thông tin](major) bao nhiêu?
+      - Ngành [Ngôn ngữ Anh](major) học phí thế nào?
+      - Học phí ngành [Sư phạm](major) có phải đóng không?
+      - Học phí có thay đổi mỗi năm không?
+      - Trường có chính sách miễn giảm học phí không?
+
+  - intent: ask_admission
+    examples: |
+      - Năm nay trường tuyển sinh như thế nào?
+      - Trường có xét tuyển học bạ không?
+      - Có tuyển sinh bằng điểm thi tốt nghiệp không?
+      - Điểm chuẩn năm ngoái các ngành bao nhiêu?
+      - Điều kiện để xét học bạ là gì?
+      - Tôi có thể nộp hồ sơ online không?
+
+  - intent: ask_scholarship
+    examples: |
+      - Trường có học bổng không?
+      - Điều kiện nhận học bổng là gì?
+      - Học bổng toàn phần bao nhiêu?
+      - Học sinh giỏi có được học bổng không?
+      - Sinh viên nghèo có hỗ trợ học phí không?
+
+  - intent: ask_dormitory
+    examples: |
+      - Trường có ký túc xá không?
+      - Ký túc xá ở đâu, giá bao nhiêu?
+      - Có hỗ trợ việc làm thêm không?
+      - Trường có câu lạc bộ sinh viên không?
+      - Trường có hoạt động ngoại khóa không?
+
+  - intent: ask_contact
+    examples: |
+      - Làm sao liên hệ phòng đào tạo?
+      - Số điện thoại tuyển sinh?
+      - Trang web tuyển sinh là gì?
+      - Fanpage Facebook chính thức của trường là gì?

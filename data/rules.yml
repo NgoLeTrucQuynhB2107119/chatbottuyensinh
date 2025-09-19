@@ -1,0 +1,55 @@
+version: "3.1"
+
+rules:
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Say 'I am a bot' anytime the user challenges
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+  - rule: Chào lại khi user chào
+    steps:
+      - intent: xinchao
+      - action: utter_greet
+  - rule: fallback to Gemini
+    steps:
+      - intent: nlu_fallback
+      - action: action_chat_gemini
+      - action: action_listen
+  - rule: Thông tin trường
+    steps:
+      - intent: ask_school_info
+      - action: utter_school_info
+
+  - rule: Ngành đào tạo
+    steps:
+      - intent: ask_major
+      - action: utter_major
+
+  - rule: Học phí
+    steps:
+      - intent: ask_tuition
+      - action: utter_tuition
+
+  - rule: Tuyển sinh
+    steps:
+      - intent: ask_admission
+      - action: utter_admission
+
+  - rule: Học bổng
+    steps:
+      - intent: ask_scholarship
+      - action: utter_scholarship
+
+  - rule: Ký túc xá
+    steps:
+      - intent: ask_dormitory
+      - action: utter_dormitory
+
+  - rule: Liên hệ
+    steps:
+      - intent: ask_contact
+      - action: utter_contact

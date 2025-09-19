@@ -1,0 +1,47 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# ===== Virtual environments =====
+venv/
+.env/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ===== Jupyter Notebook =====
+.ipynb_checkpoints
+
+# ===== Logs =====
+*.log
+logs/
+*.out
+*.err
+
+# ===== Rasa =====
+results/
+models/
+rasa/cache/
+
+# ===== TensorFlow / Machine Learning =====
+*.ckpt
+*.h5
+*.pb
+*.tflite
+*.savedmodel/
+checkpoint
+events.out.tfevents.*
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== IDE =====
+.vscode/
+.idea/
+*.swp
