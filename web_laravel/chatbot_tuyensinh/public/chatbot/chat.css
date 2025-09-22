@@ -11,26 +11,27 @@ body {
     margin: 0;
     font-family: Inter, system-ui, Arial, sans-serif;
     height: 100vh;
-    background: linear-gradient(
-        270deg,
-        #68c5ed,
-        #c2dce4,
-        #c7b5c6,
-        #a3d1ee,
-        #dfaad8
-    );
+    background: linear-gradient(270deg,
+            #68c5ed,
+            #c2dce4,
+            #c7b5c6,
+            #a3d1ee,
+            #dfaad8);
     background-size: 600% 600%;
     animation: gradientMove 20s ease infinite;
-    overflow: hidden; /* để sao không tràn */
+    overflow: hidden;
+    /* để sao không tràn */
 }
 
 @keyframes gradientMove {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
@@ -52,6 +53,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     transition: 0.2s;
 }
+
 #chatToggle {
     position: fixed;
     bottom: 20px;
@@ -67,7 +69,8 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     transition: 0.2s;
     z-index: 1000;
-    overflow: visible; /* để vòng sáng không bị cắt */
+    overflow: visible;
+    /* để vòng sáng không bị cắt */
 }
 
 /* Vòng tròn ánh sáng */
@@ -80,7 +83,8 @@ body {
     height: 60px;
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(43, 110, 246, 0.5); /* màu accent với opacity */
+    background: rgba(43, 110, 246, 0.5);
+    /* màu accent với opacity */
     animation: pulse 0.8s infinite;
     z-index: -1;
 }
@@ -91,6 +95,7 @@ body {
         transform: translate(-50%, -50%) scale(1);
         opacity: 0.7;
     }
+
     100% {
         transform: translate(-50%, -50%) scale(2);
         opacity: 0;
@@ -107,7 +112,7 @@ body {
     position: fixed;
     bottom: 90px;
     right: 20px;
-    width: 340px;
+    width: 400px;
     height: 480px;
     background: var(--card);
     border-radius: 16px;
@@ -309,6 +314,7 @@ body {
 }
 
 @keyframes blink {
+
     0%,
     80%,
     100% {
