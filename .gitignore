@@ -25,7 +25,9 @@ logs/
 
 # ===== Rasa =====
 results/
+# Bỏ qua model của Rasa
 models/
+
 rasa/cache/
 
 # ===== TensorFlow / Machine Learning =====
