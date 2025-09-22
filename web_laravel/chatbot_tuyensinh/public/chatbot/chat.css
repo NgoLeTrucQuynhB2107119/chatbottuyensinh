@@ -112,7 +112,7 @@ body {
     position: fixed;
     bottom: 90px;
     right: 20px;
-    width: 450px;
+    width: 400px;
     height: 480px;
     background: var(--card);
     border-radius: 16px;
